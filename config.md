@@ -4,7 +4,7 @@ Add here global page variables to use throughout your website.
 +++
 author = "CDT AIMLAC"
 mintoclevel = 2
-prepath = "blog"
+prepath = "blogs"
 
 # Add here files or directories that should be ignored by Franklin, otherwise
 # these files might be copied and, if markdown, processed by Franklin which
