@@ -1,0 +1,28 @@
+
+#aimlac-logo-header {
+    max-width: 30%;
+    float: right;
+    padding-right: 1em;
+    white-space: nowrap;
+}
+
+.university-logo {
+    max-width: 20%;
+}
+
+/* SEARCH BAR */ 
+#lunrSearchForm input {
+    position: static;
+    background-color: white;
+    cursor: pointer;
+    border-style: solid;
+    outline: 0;
+    border-radius: 290486px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 8px;
+}
+
+
