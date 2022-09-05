@@ -1,19 +1,17 @@
 using Colors
-using MemoizedMethods
 using Random
 Random.seed!(42)
 
 @memoize _tag_color(tag) = "#" * hex(HSV(floor(Int, rand() * 1000), 1, 1)) 
 
 function _get_all_tags()
-    global ALL_POSTS
-    posts = ALL_POSTS
+    posts = _get_posts()
     reduce(vcat, map(i -> getproperty(i, :tags), posts)) |> unique |> sort
 end
 
 function format_tag(tag)
     color = _tag_color(tag)
-    """<a href="../tag/$tag"> $tag </a><div class="tag-color-box" style="background-color: $color;"></div>"""
+    """<a href="/tag/$tag"> $tag </a><div class="tag-color-box" style="background-color: $color;"></div>"""
 end
 
 function hfun_all_tag_list()

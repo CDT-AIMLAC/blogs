@@ -80,27 +80,26 @@ html {
   margin: 0.6rem 0;
 }
 
-.franklin-content {
-  position: relative;
-  padding-left: 12.5%;
-  padding-right: 12.5%;
-  line-height: 1.35em;
+@media (min-width: 300px) {
+  .franklin-content {
+    width: 100%;
+    padding: 5px;
+  }
 }
 
-/* On wide screens, fix content width to a max value. */
-@media (min-width: 940px) {
+@media (min-width: 600px) {
   .franklin-content {
-    width: 905px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* On narrow device, reduce margins. */
-@media (max-width: 480px) {
+@media (min-width: 1440px) {
   .franklin-content {
-    padding-left: 6%;
-    padding-right: 6%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -132,7 +131,7 @@ h6 {
 .franklin-content h2 {
   padding-bottom: 0.3em;
   border-bottom: 1px solid lightgrey;
-  margin-top: 2em;
+  margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
