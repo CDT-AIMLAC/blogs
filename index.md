@@ -21,11 +21,12 @@ title = "Home"
 </p>
 ~~~
 
+These are the student and staff blogs written by members of the UKRI Centre for Doctoral Training (CDT) in Artificial Intelligence, Machine Learning, and Advanced Computing.
 
 ### Useful links
 
 - [AIMLAC homepage](http://cdt-aimlac.org/cdt-main.html)
-- [AIMLAC GitHub organisation](https://github.com/CDT-AIMLAC)
+- [Our GitHub organisation](https://github.com/CDT-AIMLAC)
 
 ## Latest posts
 

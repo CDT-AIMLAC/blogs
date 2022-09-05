@@ -54,6 +54,10 @@
     text-decoration: none;
 }
 
+#view-text:hover {
+    text-decoration: underline;
+}
+
 .post-card h3 {
     margin: 0;
 }
@@ -64,7 +68,9 @@
 
 .post-card p {
     margin: 0;
-    padding-left: 7px;
+    padding-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .post-card hr{
@@ -97,3 +103,13 @@
     display: inline-block;
 }
 
+.post-title h1 {
+    margin-bottom: 10px; 
+    margin-top: 0.8em;
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+code {
+    background-color: rgb(243, 243, 243) !important;
+}

@@ -19,8 +19,5 @@ website_descr = "Example website using Franklin"
 website_url   = "cdt-aimlac.github.io/blogs"
 +++
 
-<!--
-Add here global latex commands to use throughout your pages.
--->
-\newcommand{\R}{\mathbb R}
-\newcommand{\scal}[1]{\langle #1 \rangle}
+\newcommand{\maketitle}{{{maketitle}}}
+\newcommand{\example}[1]{@@example @@title Example @@ @@content #1 @@ @@}

@@ -8,6 +8,7 @@ const POSTS_MAIN = "main.md"
 struct BlogPost
     path::String
     author::String
+    affiliation::String
     title::String
     summary::String
     date::DateTime
@@ -19,6 +20,7 @@ Base.isless(p1::BlogPost, p2::BlogPost) = p1.date < p2.date
 function BlogPost(dir)
     f = joinpath(dir, POSTS_MAIN)
     author = pagevar(f, :author)
+    affiliation = pagevar(f, :affiliation)
     title = pagevar(f, :title)
     summary = pagevar(f, :summary)
     date = pagevar(f, :date)
@@ -31,11 +33,11 @@ function BlogPost(dir)
 
     BlogPost(
         # trim off the `.md` extension
-        f[1:end-3], author, title, summary, date, tags
+        f[1:end-3], author, affiliation, title, summary, date, tags
     )
 end
 
-function _get_posts()
+@memoize function _get_posts()
     # get all subdirectories
     subdirs = filter(isdir, readdir(POSTS_DIRECTORY, join=true))
     # filter those which contain a `main.md` file
@@ -45,8 +47,6 @@ function _get_posts()
     end
     map(BlogPost, post_subdirs)
 end
-# poor man's memoize
-const ALL_POSTS = _get_posts()
 
 function format_summary(b::BlogPost)
     date = Dates.format(b.date, "d u Y")
@@ -59,8 +59,8 @@ function format_summary(b::BlogPost)
         <div>
             <a id="post-card-selection" href="/$(b.path)">
                 <h3>$(b.title)</h3> 
-                $(b.summary)        
-                <br>
+                <p> $(b.summary) </p>
+                <p style="text-align: right;"> <small id="view-text"> &#10174; View post </small> </p>
                 <small style="color: grey;"><i> $(date) - Author: $(b.author)</i></small>
             </a>
             <hr>
@@ -73,8 +73,7 @@ function format_summary(b::BlogPost)
 end
 
 function hfun_posts_chronological(n)
-    global ALL_POSTS
-    posts = ALL_POSTS
+    posts = _get_posts()
     sort!(posts; rev=true)
 
     last_index = min(parse(Int, first(n)), length(posts))
