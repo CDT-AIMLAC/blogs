@@ -16,5 +16,6 @@ function lx_baz(com, _)
 end
 
 # include foramtters and parsers
+include("scripts/tags.jl")
 include("scripts/formatting.jl")
 include("scripts/parsers.jl")
