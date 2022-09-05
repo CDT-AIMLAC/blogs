@@ -38,6 +38,7 @@ jobs:
             using Pkg; Pkg.activate("."); Pkg.instantiate();
             using NodeJS; run(`$(npm_cmd()) install highlight.js lunr cheerio`);
             using Franklin;
+            optimize();
             lunr();
             optimize()'
     - name: Build and Deploy
