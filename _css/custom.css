@@ -8,6 +8,7 @@
 
 .university-logo {
     max-width: 20%;
+    padding: 8px !important;
 }
 
 /* SEARCH BAR */ 
@@ -25,4 +26,39 @@
     margin-top: 8px;
 }
 
+/* POST CARD */
+.post-card div {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    outline: 1px solid rgb(0,0,128);
+    border-radius: 2px;
+}
+
+.post-card a {
+    width: 98.5%;
+    height: 100%;
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 8px;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+}
+
+.post-card a:hover {
+    background-color: #d7faff;
+    text-decoration: none;
+}
+
+.post-card h3 {
+    margin: 0;
+}
+
+.post-card p {
+    margin: 0;
+    padding-left: 7px;
+}
 

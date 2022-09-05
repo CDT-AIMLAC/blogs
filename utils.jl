@@ -15,21 +15,6 @@ function lx_baz(com, _)
   return uppercase(brace_content)
 end
 
-@delay function lx_maketitle(vname, _)
-  title = locvar(:title)
-  author = locvar(:author)
-  date = locvar(:date)
-  return """
-  ~~~
-  <h1 style="margin-bottom: 0;"> $title </h1>
-  <div style="margin-top: 0.5em; width : 100%;">
-    <div style="float: left; text-align: left;"> 
-      <small> <i> Author: $author </i> </small> 
-    </div>
-    <div style="text-align: right;"> 
-      <small> <i> $date </i> </small> 
-    </div>
-  </div>
-  ~~~
-  """
-end
+# include foramtters and parsers
+include("scripts/formatting.jl")
+include("scripts/parsers.jl")

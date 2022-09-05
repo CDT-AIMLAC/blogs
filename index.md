@@ -29,6 +29,8 @@ title = "Home"
 
 ## Latest posts
 
+{{posts_chronological 5}}
+
 ## About
 
 ~~~
