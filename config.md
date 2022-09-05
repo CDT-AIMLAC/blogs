@@ -1,6 +1,3 @@
-<!--
-Add here global page variables to use throughout your website.
--->
 +++
 author = "CDT AIMLAC"
 mintoclevel = 2
@@ -14,8 +11,10 @@ ignore = ["node_modules/"]
 
 # RSS (the website_{title, descr, url} must be defined to get RSS)
 generate_rss = true
+rss_full_content = false
+
 website_title = "AIMLAC Blogs"
-website_descr = "Example website using Franklin"
+website_descr = "Blogs for the AIMLAC center for doctoral training."
 website_url   = "cdt-aimlac.github.io/blogs"
 +++
 
