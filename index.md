@@ -10,7 +10,7 @@ title = "Home"
     
     <a href="http://www.bristol.ac.uk/homepage/"><img src="http://cdt-aimlac.org/images/logo-bristol.png" alt="" class="university-logo"></a>
 
-    <a href="https://www.cardiff.ac.uk/"><img src="http://cdt-aimlac.org/images/logo-cardiff.png" alt="" class="university-logo" style="max-width: 10%;"></a>
+    <a href="https://www.cardiff.ac.uk/"><img src="http://cdt-aimlac.org/images/logo-cardiff.png" alt="" class="university-logo" style="max-width: 7%;"></a>
 
     <a href="https://www.swansea.ac.uk/"><img src="http://cdt-aimlac.org/images/logo-swansea.png" alt="" class="university-logo"></a>
 
