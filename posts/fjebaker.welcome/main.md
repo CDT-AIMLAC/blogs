@@ -35,6 +35,14 @@ If you are a member of the AIMLAC CDT, you may wish to use this to
 
 Below are some technical details relating to the organization of the [GitHub repository](https://github.com/CDT-AIMLAC/blogs) where this site is kept, and also guides for contributing.
 
+## Features
+
+Blog posts may embed figures, datasets, execute arbitrary code at compile time or sandboxed scripts when live, feature rich interactive graphics, and much more!
+
+Each post has a creation and modification date, used to organize different chronological views when browsing posts. The blogs are also linked with _tags_, each of which is associated with a random color to aid a little with identifiability.
+
+More will be added when the site matures to help keep information navigable and accessible.
+
 ## Contributing
 
 The AIMLAC blogs are built using [Franklin.jl](https://franklinjl.org/), a feature-rich [static site](https://en.wikipedia.org/wiki/Static_web_page) generator, and the site itself is hosted using [GitHub pages](https://pages.github.com/). 
