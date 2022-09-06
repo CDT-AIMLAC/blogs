@@ -135,3 +135,5 @@ To see examples of this, see the `posts` directory of any blog post in the [CDT-
 ## Licensing
 
 The source code and content of this repository is [MIT licensed](https://github.com/CDT-AIMLAC/blogs/blob/main/LICENSE), which extends itself to all posts on this site _unless the author_ specifies differently. In such cases, a `LICENSE` file will be included in the post directory to account for the author's wishes.
+
+\addcomments

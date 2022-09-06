@@ -19,4 +19,5 @@ website_url   = "cdt-aimlac.github.io/blogs"
 +++
 
 \newcommand{\maketitle}{{{maketitle}}}
+\newcommand{\addcomments}{{{addcomments}}}
 \newcommand{\example}[1]{@@example @@title Example @@ @@content #1 @@ @@}
