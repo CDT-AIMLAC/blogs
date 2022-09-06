@@ -17,8 +17,7 @@ end
 
 Base.isless(p1::BlogPost, p2::BlogPost) = p1.date < p2.date
 
-function BlogPost(dir)
-    f = joinpath(dir, POSTS_MAIN)
+function BlogPost(f)
     author = pagevar(f, :author)
     affiliation = pagevar(f, :affiliation)
     title = pagevar(f, :title)
@@ -33,7 +32,7 @@ function BlogPost(dir)
 
     BlogPost(
         # trim off the `.md` extension
-        f[1:end-3], author, affiliation, title, summary, date, tags
+        f, author, affiliation, title, summary, date, tags
     )
 end
 
@@ -45,8 +44,13 @@ end
         files = readdir(d)
         POSTS_MAIN in files
     end
-    map(BlogPost, post_subdirs)
+    fs = joinpath.(post_subdirs, POSTS_MAIN)
+    # trim `.md` extension
+    fs = [i[1:end-3] for i in fs]
+    map(BlogPost, fs)
 end
+
+_get_posts_from_files(fs) = map(BlogPost, fs)
 
 function format_summary(b::BlogPost)
     date = Dates.format(b.date, "d u Y")
