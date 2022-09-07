@@ -21,3 +21,36 @@
     background-color: rgb(106, 161, 223);
 }
 
+.quotation {
+    padding-left: 1.0em;
+    padding-right: 1.0em;
+    font-size: 40px;
+    color: rgb(0,0,128)
+}
+
+.quotation p {
+    margin: 0;
+}
+
+.quotation .foot {
+    text-align: right;
+}
+
+.quotation .foot .source {
+    font-style: italic;
+    font-size: var(--normal);
+    padding-right: 1em;
+    color: black;
+}
+
+.quotation .content {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    font-size: var(--normal);
+    font-style: italic;
+    color: rgb(78, 78, 78);
+}
+
+.quotation .content p {
+    margin-bottom: 18px;
+}
