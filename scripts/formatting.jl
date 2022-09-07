@@ -29,7 +29,7 @@ end
 @delay function hfun_addcomments()
     return """
     <script src="https://utteranc.es/client.js"
-        repo="https://github.com/CDT-AIMLAC/blogs"
+        repo="CDT-AIMLAC/blogs"
         issue-term="pathname"
         label="comments"
         theme="github-light"
