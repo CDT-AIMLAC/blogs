@@ -41,6 +41,8 @@ Blog posts may embed figures, datasets, execute arbitrary code at compile time o
 
 Each post has a creation and modification date, used to organize different chronological views when browsing posts. The blogs are also linked with _tags_, each of which is associated with a random color to aid a little with identifiability.
 
+The comment system is vendored through [Utterances](https://utteranc.es/), and uses GitHub authentication and issues to manage conversations. Try it out at the end of this document!
+
 More will be added when the site matures to help keep information navigable and accessible.
 
 ## Contributing
