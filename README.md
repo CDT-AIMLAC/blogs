@@ -23,7 +23,7 @@ cd blogs
 julia --project=. -e "using Pkg; Pkg.instantiate()"
 ```
 
-Then start a development server to host the blogs locally:
+Then start a development server:
 
 ```
 julia --project=. -e "using Franklin; serve()"
@@ -31,5 +31,5 @@ julia --project=. -e "using Franklin; serve()"
 
 ### Updating search index
 
-Searches are operated with [lunr](https://lunrjs.com/), and requires generating an index file to work properly. After starting the development server, Franklin.jl exports `lunr()` to rebuild the index. Note that this can only be done _after_ the `__site` director has been generated.
+Searches are operated with [lunr](https://lunrjs.com/), and requires generating an index file to work properly. After starting the development server, Franklin.jl exports `lunr()` to rebuild the index. Note that this can only be done _after_ the `__site` directory has been generated.
 
