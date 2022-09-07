@@ -4,17 +4,17 @@ title = "Home"
 
 ~~~
 <p align="center" style="margin-bottom: 2em; margin-top: 0;">
-    <a href="https://www.aber.ac.uk/en/"><img class="university-logo" src="http://cdt-aimlac.org/images/logo-aber.png" alt=""></a>
+    <a href="https://www.aber.ac.uk/en/"><img class="university-logo" src="/assets/logo-aber.png" alt=""></a>
 
-    <a href="https://www.bangor.ac.uk/index.php.en"><img class="university-logo" src="http://cdt-aimlac.org/images/logo-bangor.png" alt=""></a>
+    <a href="https://www.bangor.ac.uk/index.php.en"><img class="university-logo" src="/assets/logo-bangor.png" alt=""></a>
     
-    <a href="http://www.bristol.ac.uk/homepage/"><img src="http://cdt-aimlac.org/images/logo-bristol.png" alt="" class="university-logo"></a>
+    <a href="http://www.bristol.ac.uk/homepage/"><img src="/assets/logo-bristol.png" alt="" class="university-logo"></a>
 
-    <a href="https://www.cardiff.ac.uk/"><img src="http://cdt-aimlac.org/images/logo-cardiff.png" alt="" class="university-logo" style="max-width: 7%;"></a>
+    <a href="https://www.cardiff.ac.uk/"><img src="/assets/logo-cardiff.png" alt="" class="university-logo" style="max-width: 7%;"></a>
 
-    <a href="https://www.swansea.ac.uk/"><img src="http://cdt-aimlac.org/images/logo-swansea.png" alt="" class="university-logo"></a>
+    <a href="https://www.swansea.ac.uk/"><img src="/assets/logo-swansea.png" alt="" class="university-logo"></a>
 
-    <a href="https://www.supercomputing.wales/"><img src="http://cdt-aimlac.org/images/logo-scw.png" alt="" class="university-logo"></a>
+    <a href="https://www.supercomputing.wales/"><img src="/assets/logo-scw.png" alt="" class="university-logo"></a>
 </p>
 <p align="center">
     Welcome to the AIMLAC Blogs!
@@ -42,6 +42,6 @@ These are the student and staff blogs written by members of the UKRI Centre for 
 
 ~~~
 <p align="center">
-    <img src="http://cdt-aimlac.org/images/ukri-logo.jpg" class="university-logo" alt="">
+    <img src="/assets/ukri-logo.jpg" class="university-logo" alt="">
 </p>
 ~~~
